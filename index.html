@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DataFlow</title>
+    
+     <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+      <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+     <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">  
+
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ 
+<script src="script.js"></script>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+</head>
+  <body>
+    <!-- NAVBAR STARTS HERE -->
+    <header>
+        <div class="navbar d-flex justify-content-center align-items-center">
+          <div>
+            <a href="#" class="logo"> 
+              <!-- <img src="images/logo.png" alt=""> -->
+              <i class="nav-icon fa fa-cubes home"></i>
+              DataFlow
+          </a>
+          </div>
+              <div>
+                <i class=" menu-toggle-btn fas fa-bars"></i>
+              </div>
+              
+            </div>
+             <nav class="navigation-menu">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  </form>
+                <a href="#"><i class="nav-icon fa fa-users home"></i>Last Updated:09/june/2022</a>
+                <a href="#"><i class="nav-icon fa fa-user about"></i>Hi Sanjeev</a>
+                <a href="#"><i class="nav-icon fa fa-key works"></i>Change Password</a>
+                <a href="#"><i class="nav-icon fa fa-window-restore team"></i>SignOut</a>
+                <a href="#"><i class="nav-icon fa fa-lock contact"></i>Admin</a>
+             </nav>
+          
+    </header>
+    
+    <!-- NAVBAR ENDS HERE -->
+
+
+      <!-- PSV Performance  section starts Here-->
+
+      <section class="psv mt-2">
+
+        <div class="container-fluid" style="padding: 0% 3%;">
+    
+          <div class="row tabs ">
+
+            <div class="col-lg-3 inner--padding">
+              <div class="feature-box-1 d-flex justify-content-around align-items-center">
+                <div class="d-flex flex-column p-2">
+                  <h3 class="performance-number">610</h3>
+                  <p>MTD Received cases | +59%</p>
+                </div>
+                <div>
+                  <i class="icon fas fa-solid fa-users fa-3x"></i>
+                </div>
+              </div>
+            </div>
+          
+          <div class="col-lg-3 inner--padding">
+            <div class="feature-box-2  d-flex justify-content-around align-items-center ">
+                <div class="d-flex flex-column p-2">
+                  <h3 class="performance-number">640</h3>
+                  <p>MTD completed cases | +25%</p>
+                </div>
+                <div>
+                    <i class="icon fas fa-solid fa-calendar-check fa-3x"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 inner--padding">
+              <div class="feature-box-3 d-flex justify-content-around align-items-center">
+                <div class="d-flex flex-column p-2">
+                  <h3 class="performance-number">1.6%</h3>
+                  <p>MTD Disc Rate | cases-10</p>
+                </div>
+                <div>
+                    <i class="icon fas fa-solid fa-users fa-3x"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 inner--padding">
+             <div class="feature-box-4  d-flex justify-content-around align-items-center">
+              <div class="d-flex flex-column p-2">
+                <h3 class="performance-number">3.3%</h3>
+                <p>MTD UTD Rate | cases-21</p>
+              </div>
+              <div>
+                <i class="icon fas fa-solid fa-calendar-check fa-3x"></i>
+              </div>
+            </div>
+          </div>
+          </div>
+    
+    
+        </div>
+      </section>
+        <!-- PSV Performance  section ends Here-->
+
+        <!-- Graph Section starts here  -->
+        <section class="graph-table">
+            <div class="container-fluid">
+    
+                <div class="row">
+                  <div  class="col-lg-6"> 
+                    <figure class="highcharts-figure">
+                      <div id="container"></div>
+                      <!-- <p class="highcharts-description">
+                        Chart showing column comparisons with negative values.
+                        Column charts are commonly used to compare values, and remains one of
+                        the most popular and readable types of charts.
+                      </p> -->
+                    </figure>
+                  </div>
+                  <div  class="col-lg-6 table-content" >
+                    <p>Cases Received,completed and Turnaround Time</p>
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
+                        <div  class="input--space--media">
+                        <form>
+                            <!-- <label for="case" placeholder="case type"></label> -->
+                            <select name="case type" id="case" class="input--field text-center">
+                              <option value="select">--Select--</option>
+                              <option value="volvo">Received</option>
+                              <option value="saab">completed</option>
+                              <option value="opel">Turnaround</option>
+                            </select>
+                           
+                          </form>
+                        </div>
+                    
+                     <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <button type="button" id="showTableA" value="Table A" class="btn btn-success">Nationality</button>
+
+                        <button type="button" id="showTableB" value="Table B" class="btn btn-warning">Profession</button>
+                      </div>
+                    </div>
+
+                    <div class="table-data" id="demo">
+                        <table>
+                            <tr>
+                              <th>Nationality</th>
+                              <th class="swipe--right">Received</th>
+                              <th class="swipe--right">completed</th>
+                              <th class="swipe--right">Average TAT(Days)</th>
+                            </tr>
+                            <tr>
+                              <td>India</td>
+                              <td class="swipe--right">204</td>
+                              <td class="swipe--right">334</td>
+                              <td class="swipe--right">19</td>
+                            </tr>
+                            <tr>
+                                <td>Pakistan</td>
+                                <td class="swipe--right">587</td>
+                                <td class="swipe--right">124</td>
+                                <td class="swipe--right">58</td>
+                              </tr>
+                              <tr>
+                                <td>America</td>
+                                <td class="swipe--right">452</td>
+                                <td class="swipe--right">784</td>
+                                <td class="swipe--right">56</td>
+                              </tr>
+                              <tr>
+                                <td>Russia</td>
+                                <td class="swipe--right">635</td>
+                                <td class="swipe--right">112</td>
+                                <td class="swipe--right">65</td>
+                              </tr>
+                              <tr>
+                                <td>Spain</td>
+                                <td class="swipe--right">695</td>
+                                <td class="swipe--right">487</td>
+                                <td class="swipe--right">36</td>
+                              </tr>
+                              <tr>
+                                <td>Norway</td>
+                                <td class="swipe--right">204</td>
+                                <td class="swipe--right">334</td>
+                                <td class="swipe--right">19</td>
+                              </tr>
+                          </table>
+                    </div>
+
+                    <div class="table-data" id="demo2" style="display: none">
+                        <table>
+                            <tr>
+                              <th>Profession</th>
+                              <th class="swipe--right">Received</th>
+                              <th class="swipe--right">completed</th>
+                              <th class="swipe--right">Average TAT(Days)</th>
+                            </tr>
+                            <tr>
+                              <td>Canada</td>
+                              <td class="swipe--right">124</td>
+                              <td class="swipe--right">452</td>
+                              <td class="swipe--right">45</td>
+                            </tr>
+                            <tr>
+                                <td>Egypt</td>
+                                <td class="swipe--right">652</td>
+                                <td class="swipe--right">235</td>
+                                <td class="swipe--right">07</td>
+                              </tr>
+                              <tr>
+                                <td>China</td>
+                                <td class="swipe--right">124</td>
+                                <td class="swipe--right">253</td>
+                                <td class="swipe--right">97</td>
+                              </tr>
+                              <tr>
+                                <td>Bangladesh</td>
+                                <td class="swipe--right">112</td>
+                                <td class="swipe--right">001</td>
+                                <td class="swipe--right">06</td>
+                              </tr>
+                              <tr>
+                                <td>Spain</td>
+                                <td class="swipe--right">204</td>
+                                <td class="swipe--right">334</td>
+                                <td class="swipe--right">19</td>
+                              </tr>
+                              <tr>
+                                <td>Norway</td>
+                                <td class="swipe--right">204</td>
+                                <td class="swipe--right">334</td>
+                                <td class="swipe--right">19</td>
+                              </tr>
+                          </table>
+                    </div>
+
+                  </div>
+                </div>
+            </div>
+        </section>
+        <!-- Graph Section ends here  -->
+     
+    <script src="script.js"></script>
+  </body>
+</html>
