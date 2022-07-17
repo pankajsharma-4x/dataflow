@@ -48,3 +48,36 @@ $(document).ready(function(){
   });
   
   })
+
+
+  // changing the minus (-) to plus (+) for accordian 
+
+$(".question").click(function() {
+  if ($(this).next().is(":visible")) {
+    $(this).removeClass("active");
+  } else if ($(".question").next().is(":hidden")) {
+    $('.question').removeClass("active");
+    $(this).addClass("active");
+  }
+});
+
+// Fullscreen with JavaScript
+var elem = document.getElementById("accordionExample");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+  
+// Alert Modal Type
+		$(document).on('click', '#success', function(e) {
+			swal(
+				'Success',
+				'You clicked the <b style="color:green;">Success</b> button!',
+				'success'
+			)
+		});
